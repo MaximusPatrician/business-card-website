@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Сайт-візитка</title>
+</head>
+
+<body>
+    <div class="balloons">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <header>
+        <div class="container main-top">
+            <a href="#">
+                <img class="logo" src="logo.png" alt="logo">
+            </a>
+            <div class="contacts">
+                <a target="_blank" class="icon phone" href="tel:+380684836115">068 483 6115</a>
+                <a target="_blank" class="icon discord" href="#">support_codex</a>
+                <a target="_blank" class="icon tg" href="https://t.me/maksim_nextzone">neo_support</a>
+                <button class="callback btn" type="button">Здійснити замовлення</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container title-section">
+
+                <h1>Ласкаво просимо!</h1>
+                <p>Я Максим</p>
+                <div class="btns">
+                    <button class="btn" type="button">Здійснити замовлення</button>
+                    <button class="btn openModal" type="button">Консультація</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-two">
+                <div class="info">
+                    <p><b>Я вірю в інший підхід до веброзробки.</b>
+                        Підхід, у якому головне — не просто створити сайт,
+                        а зрозуміти потреби замовника, побудувати довіру та запропонувати рішення,
+                        яке дійсно працює.</p>
+                </div>
+                
+                <div class="info">
+                    <p><b>Для мене вебсайт — це не шаблонний продукт,</b>
+                        а інструмент комунікації між вами та вашою аудиторією.
+                        Саме тому в роботі я роблю акцент на зручність користування,
+                        зрозумілий інтерфейс та сучасні технології.</p>
+                </div>
+            </div>
+        </section>
+
+        <dialog class="modal">
+            <form class="modal-form" method="dialog">
+                <h2>Контактна інформація</h2>
+
+                <label>
+                    Імʼя
+                    <input type="text" name="name" placeholder="Ваше імʼя" required>
+                </label>
+
+                <label>
+                    Телефон
+                    <input type="tel" name="phone" placeholder="+380..." required>
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" name="email" placeholder="example@email.com">
+                </label>
+
+                <label>
+                    Коментар
+                    <textarea name="message" placeholder="Опишіть ваше замовлення"></textarea>
+                </label>
+
+                <div class="modal-buttons">
+                    <button class="btn" type="submit">Надіслати</button>
+                    <button class="btn closeModal" type="button">Закрити</button>
+                </div>
+            </form>
+        </dialog>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="logo.png" alt="logo" class="footer-logo">
+                <p>© 2026 Максим. Всі права захищені.</p>
+            </div>
+
+            <div class="footer-center">
+                <h4>Контакти</h4>
+                <a href="tel:+380684836115">📞 068 483 6115</a>
+                <a href="https://t.me/maksim_nextzone" target="_blank">💬 Telegram</a>
+                <a href="#">🎮 Discord</a>
+            </div>
+
+            <div class="footer-right">
+                <h4>Навігація</h4>
+                <a href="#">Головна</a>
+                <a href="about.html">Про мене</a>
+                <a href="#">Консультація</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const openModal = document.querySelector('.openModal');
+        const closeModal = document.querySelector('.closeModal');
+        const modal = document.querySelector('.modal');
+
+        openModal.addEventListener('click', () => {
+            modal.showModal();
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.close();
+        });
+    </script>
+</body>
+
+</html>
