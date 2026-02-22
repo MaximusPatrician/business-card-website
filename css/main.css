@@ -423,7 +423,122 @@ header, main, footer {
     z-index: 1;
 }
 
+/* ============================= */
+/* 📱 АДАПТИВ ДЛЯ ПЛАНШЕТІВ */
+/* ============================= */
+
+@media (max-width: 992px) {
+
+    .main-top {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contacts {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .container-two {
+        margin: 40px 40px;
+    }
+
+    .info {
+        margin: 20px 0;
+    }
+
+    .about-hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+}
 
 
 
+/* АДАПТИВ ДЛЯ МОБІЛЬНИХ */
 
+
+@media (max-width: 576px) {
+
+    h1 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .main-top {
+        padding: 15px 10px;
+    }
+
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-two {
+        margin: 20px 15px;
+        padding: 15px;
+    }
+
+    .info {
+        margin: 15px 0;
+        padding: 15px;
+    }
+
+    .title-section {
+        padding: 60px 15px;
+        background-position: center bottom;
+        background-size: 150px;
+    }
+
+    .modal-form {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .modal-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        width: 100%;
+    }
+}
